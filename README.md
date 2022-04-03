@@ -6,18 +6,25 @@ Aby aktywnie uczestniczyć w warsztatach MLOps w praktyce, potrzebujesz skonfigu
 
 ### 1. Instalacja wymaganego oprogramowania:
 ```
-1a. Jeżeli używasz systemu MS Windows, zainstaluj Windows Subsystem for Linux (WSL2). Szczegóły: https://docs.microsoft.com/en-us/windows/wsl/.
+1a. Jeżeli używasz systemu MS Windows, zainstaluj Windows Subsystem for Linux (WSL2).
+Szczegóły: https://docs.microsoft.com/en-us/windows/wsl/.
 
-1b. Zainstaluj Docker Desktop (w systemie Windows jako administrator): https://www.docker.com/products/docker-desktop/. Wejdź do ustawień programu i upewnij się, że ma on do dyspozycji minimum 8GB pamięci RAM.
+1b. Zainstaluj Docker Desktop (w systemie Windows jako administrator):
+https://www.docker.com/products/docker-desktop/.
+Wejdź do ustawień programu i upewnij się, że ma on do dyspozycji minimum
+8GB pamięci RAM.
 ```
 
 ### 2. Pobranie kodu uruchamiającego środowisko MLOps:
 ```
-2a. Uruchom terminal (jeśli używasz MS Windows, wszystkie kolejne czynności wykonaj w terminalu WSL2) i przejdź do folderu, do którego chcesz pobrać pliki środowiska MLOps.
+2a. Uruchom terminal (jeśli używasz MS Windows, wszystkie kolejne czynności
+wykonaj w terminalu WSL2) i przejdź do folderu, do którego chcesz pobrać
+pliki środowiska MLOps.
 
 $ cd <ścieżka do folderu>
 
-2b. Skopiuj zawartość repozytorium (zostanie utworzony folder o nazwie cerebro-agh zawierający pliki z repozytorium githuba):
+2b. Skopiuj zawartość repozytorium (zostanie utworzony folder
+o nazwie cerebro-agh zawierający pliki z repozytorium githuba):
 
 $ git clone https://github.com/ksatola/cerebro-agh.git
 
@@ -28,9 +35,11 @@ $ cd cerebro-agh
 
 ### 3. Przygotowanie do uruchomienia środowiska MLOps:
 ```
-3a. Uruchom aplikację Docker Desktop (pamiętaj o przydzieleniu 8GB RAM w ustawieniach).
+3a. Uruchom aplikację Docker Desktop (pamiętaj o przydzieleniu
+8GB RAM w ustawieniach).
 
-3b. Zaloguj się w Docker Desktop (jeśli nie masz konta, możesz je bezpłatnie utworzyć).
+3b. Zaloguj się w Docker Desktop (jeśli nie masz konta,
+możesz je bezpłatnie utworzyć).
 ```
 
 ### 4. Uruchomienie środowiska MLOps:
@@ -39,7 +48,10 @@ $ cd cerebro-agh
 
 $ make
 
-Skrypt pobierze obrazy Docker'a oraz skonfiguruje 3 maszyny wirtualne. Za pierwszym razem może to potrwać kilka minut. Jeśli wszystko się uda, w terminalu zobaczysz informacje dotyczące dostępu do poszczególnych komponentów środowiska. Szczegóły poznasz podczas warsztatów.
+Skrypt pobierze obrazy Docker'a oraz skonfiguruje 3 maszyny wirtualne.
+Za pierwszym razem może to potrwać kilka minut. Jeśli wszystko się uda,
+w terminalu zobaczysz informacje dotyczące dostępu do poszczególnych
+komponentów środowiska. Szczegóły poznasz podczas warsztatów.
 ```
 
 ### 5. Wyłączenie środowiska MLOps:
@@ -55,12 +67,14 @@ Twój system jest gotowy do warsztatów.
 ```
 7a. Wyłącz środowisko (patrz punkt 5).
 
-7b. W Docker Desktop usuń wszystkie obrazy, których nazwa zaczyna się od "gradflow" oraz obraz "mlflow_demo" (jeśli był tworzony).
+7b. W Docker Desktop usuń wszystkie obrazy, których nazwa zaczyna się
+od "gradflow" oraz obraz "mlflow_demo" (jeśli był tworzony).
 
 7c. Usuń folder cerebro-agh utworzony w punkcie 2b.
+```
 
 Opisane powyżej środowisko MLOps zostało utworzone na bazie workbench'u zbudowanego przez Natu Lauchande, autora książki pt. Machine Learning Engineering with MLflow (którą polecam wszystkim zainteresowanym MLOps). W trakcie warsztatów, będziemy wykorzystywali pomysł na projekt analityczny zaprezentowany w książce i rozszerzymy go w taki sposób, żeby pasował do koncepcji zaprezentowanych w trakcie wykładu pt. Wstęp do MLOps.
-```
+
 
 ## II. Kod i dodatkowe informacje, które będą nam potrzebne podczas warsztatów
 
